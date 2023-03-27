@@ -1,0 +1,8 @@
+CREATE TABLE views_count (
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  ip_address VARCHAR(50) NOT NULL,
+  user_agent VARCHAR(255) NOT NULL,
+  view_date DATETIME NOT NULL,
+  page_url VARCHAR(255) NOT NULL,
+  views_count INT(11) NOT NULL DEFAULT 1
+);
